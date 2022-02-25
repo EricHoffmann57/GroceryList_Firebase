@@ -1,0 +1,51 @@
+name: init_firebase
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.15.1 <3.0.0"
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  firebase_core: ^1.11.0
+  cloud_firestore: ^3.1.6
+
+  cupertino_icons: ^1.0.2
+  image_picker: 0.8.4+8
+  path: ^1.8.0
+  firebase_storage: ^10.2.5
+  file_picker: ^4.3.3
+  transparent_image: ^2.0.0
+  path_provider: ^2.0.9
+  filter_list: ^1.0.1
+  provider: ^4.1.2
+  image: ^3.1.1
+  shared_preferences: ^2.0.13
+  get_storage: ^2.0.3 
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+  flutter_lints: ^1.0.0
+
+
+flutter:
+
+
+  uses-material-design: true
+  assets:
+    - assets/images/food.png
+
