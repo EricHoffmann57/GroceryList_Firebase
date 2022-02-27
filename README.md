@@ -17,7 +17,7 @@ List is reordonable with drag and drop and swipe move deletes an item in list.
 A checkbox checked adds product to cart in second page and product disappears from initial list.
 
 # Second page : added to cart
-The second page is very simple and only show products added to cart. A delete icon at the top right permits to clean the page for another list to come.
+The second page is very simple and only show products added to cart. A delete icon at the top right clear the page for another list to come.
 Second page is called by tapping on the cart icon in top appBar menu and a back arrow permits to return on main screen.
 
 # Third page: create/edit/search product in Firebase collection
