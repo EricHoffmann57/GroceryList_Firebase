@@ -13,7 +13,7 @@ If products exists in database, a specific icon will be displayed as product ima
 The buttons in the footer part, permit to save a list locally: "sauvegarder", load it "restaurer" and delete full list "supprimer".
 Deleting list is immediate if not already loaded on screen. 
 
-List is reordonable with drag and drop and swipe move permits to delete an item in list.
+List is reordonable with drag and drop and swipe move deletes an item in list.
 A checkbox checked adds product to cart in second page and product disappears from initial list.
 
 # Second page : added to cart
