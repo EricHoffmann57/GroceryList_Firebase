@@ -335,13 +335,14 @@ class _PageAddProductState extends State<PageAddProduct> {
                               textAlign: TextAlign.center,
                               style: const TextStyle(
                                 color: Colors.blueGrey,
-                                fontSize: 20,
+                                fontSize: 14,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
                             trailing: SizedBox(
                               width: 100,
                               child: Row(
+                                mainAxisAlignment: MainAxisAlignment.end,
                                 children: [
                                   // Press this button to edit a single product
                                   IconButton(
