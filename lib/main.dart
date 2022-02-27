@@ -111,7 +111,7 @@ class GroceryListState extends State<GroceryList> {
                   //Documents list added to filterName of products
                   if (searchText.isNotEmpty) {
                     documents = documents.where((element) {
-                      return element['name'] == searchText;
+                      return element['name'] == searchText.trim();
                     }).toList();
                   }
                   if (searchText != "") {
@@ -124,7 +124,7 @@ class GroceryListState extends State<GroceryList> {
 
                           product = Product(
                               image: documents[index]['image'].split(',').last,
-                              name: searchText,
+                              name: searchText.trim(),
                               isChecked: false);
                           return _listViewCard(bytes);
                         });
