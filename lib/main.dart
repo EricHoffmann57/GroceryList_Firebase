@@ -440,7 +440,7 @@ class GroceryListState extends State<GroceryList> {
     // set up the AlertDialog
     AlertDialog alert = AlertDialog(
       title: const Text("Attention"),
-      content: const Text("Toute chose a un nom !"),
+      content: const Text("Tout produit a un nom !"),
       actions: [
         //cancelButton,
         continueButton,
