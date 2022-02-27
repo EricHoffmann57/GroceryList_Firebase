@@ -274,7 +274,7 @@ class _PageAddProductState extends State<PageAddProduct> {
       resizeToAvoidBottomInset: false,
       appBar: AppBar(
         backgroundColor: Colors.lightBlue.shade200,
-        title: const Text('Modifier/Ajouter un produit'),
+        title: const Text('Ajouter/Modifier un produit'),
         centerTitle: true,
       ),
       body: Padding(
