@@ -8,7 +8,7 @@ user manual
 
 # Main page : create grocery shopping list and push to cart 
 Products can be added to grocery list easily with text controller field and keyboard suggestion.
-If products exists in database, a specific icon will be displayed otherwise a default icon is showing.
+If products exists in database, a specific icon will be displayed as product image otherwise a default icon is shown.
 
 The buttons in the footer part, permit to save a list locally: "sauvegarder", load it "restaurer" and delete full list "supprimer".
 Deleting list is immediate if not already loaded on screen. 
