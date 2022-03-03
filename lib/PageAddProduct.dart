@@ -47,11 +47,11 @@ class _PageAddProductState extends State<PageAddProduct> {
   // Adding a product if no documentSnapshot is passed
   //If documentSnapshot != null then update an existing product
   Future<void> _createOrUpdate([DocumentSnapshot? documentSnapshot]) async {
-    String action = 'Créer';
+    String action = 'create';
     //_imageController.text = '';
     _nameController.text = '';
     if (documentSnapshot != null) {
-      action = 'Modifier';
+      action = 'update';
       _imageController.text = documentSnapshot['image'];
       _nameController.text = documentSnapshot['name'];
     }
@@ -87,7 +87,8 @@ class _PageAddProductState extends State<PageAddProduct> {
                           height: 20,
                         ),
                         ElevatedButton(
-                          child: Text(action == 'create' ? 'Create' : 'Update'),
+                          child:
+                              Text(action == 'create' ? 'Créer' : 'Modifier'),
                           onPressed: () async {
                             final String? image = _imageController.text;
                             final String? name = _nameController.text;
