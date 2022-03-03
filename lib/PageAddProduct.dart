@@ -91,7 +91,8 @@ class _PageAddProductState extends State<PageAddProduct> {
                               Text(action == 'create' ? 'Créer' : 'Modifier'),
                           onPressed: () async {
                             final String? image = _imageController.text;
-                            final String? name = _nameController.text;
+                            final String? name =
+                                _nameController.text.trim().toLowerCase();
                             if (image != "" && name != "") {
                               if (action == 'create') {
                                 // Persist a new product to Firestore
