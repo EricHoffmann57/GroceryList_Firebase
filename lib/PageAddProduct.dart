@@ -47,11 +47,11 @@ class _PageAddProductState extends State<PageAddProduct> {
   // Adding a product if no documentSnapshot is passed
   //If documentSnapshot != null then update an existing product
   Future<void> _createOrUpdate([DocumentSnapshot? documentSnapshot]) async {
-    String action = 'create';
+    String action = 'Créer';
     //_imageController.text = '';
     _nameController.text = '';
     if (documentSnapshot != null) {
-      action = 'update';
+      action = 'Modifier';
       _imageController.text = documentSnapshot['image'];
       _nameController.text = documentSnapshot['name'];
     }
