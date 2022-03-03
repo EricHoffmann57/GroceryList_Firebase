@@ -313,7 +313,7 @@ class _PageAddProductState extends State<PageAddProduct> {
                     }
                     return ListView.builder(
                       //limit products shown in ListView to last 5
-                      itemCount: documents.length < 7 ? documents.length : 7,
+                      itemCount: documents.length < 5 ? documents.length : 5,
                       itemBuilder: (context, index) {
                         final DocumentSnapshot documentSnapshot =
                             documents[index];
