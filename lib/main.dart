@@ -389,7 +389,9 @@ class GroceryListState extends State<GroceryList> {
       ),
       onPressed: () {
         setState(() {
-          Storage.printProducts(items);
+          if (items.isEmpty) {
+            Storage.printProducts(items);
+          }
         });
       });
 
