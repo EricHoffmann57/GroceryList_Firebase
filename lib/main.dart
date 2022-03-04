@@ -46,7 +46,9 @@ class GroceryListState extends State<GroceryList> {
 
   late List<Product> items = [];
   late List<Product> cart = [];
+  //persists last product entry
   final List<Product> save1 = [];
+  //save list for next time
   final List<Product> savedList = [];
   final grocery = GetStorage();
   // separate list for storing maps/ restoreTask function
