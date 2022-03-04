@@ -31,7 +31,7 @@ class GroceryListState extends State<GroceryList> {
   CollectionReference groceryProducts =
       FirebaseFirestore.instance.collection('Grocery-products');
 
-  // Lancement de l'écran : lecture du fichier
+  // initiate screen
   @override
   void initState() {
     super.initState();
@@ -318,7 +318,8 @@ class GroceryListState extends State<GroceryList> {
         ),
         onPressed: () {
           setState(() {
-            var contain = items.where((element) => element.name == searchText);
+            var contain = items.where(
+                (element) => element.name == searchText.trim().toLowerCase());
             if (contain.isEmpty) {
               if (documents.isNotEmpty && searchText != '') {
                 items.add(product);
